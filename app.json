@@ -1,0 +1,63 @@
+{
+  "name": "Auto-Forward-Bot",
+  "description": "Telegram's Best Smart Plugin File Forward Bot",
+  "logo": "https://telegra.ph/file/3b6dacb64a88a69b60066.png",
+  "keywords": [
+    "telegram",
+    "best",
+    "file",
+    "forward",
+    "bot"
+  ],
+  "repository": "https://github.com/im-bb/TG-Forward-Bot",
+  "env": {
+    "API_ID": {
+      "description": "Get This Value From https://my.telegram.org or @UseTGXBot",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get This Value From https://my.telegram.org or @UseTGXBot",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token From @BotFather",
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Username Of Your Bot Without @ (only give if you want auto starts forwarding when heroku restarts)",
+      "value": "",
+      "required": false
+    },
+    "TO_CHANNEL": {
+      "description": "Enter Your Channel Id Must Add Eg:- -100xxxxxxxxx",
+      "value": ""
+    },
+    "DATABASE_URI": {
+      "description": "Get This From cloud.mongodb.com",
+      "value": ""
+    },
+    "DATABASE_NAME": {
+      "description": "Database Cluster Name",
+      "value": "Cluster0"
+    },
+    "COLLECTION_NAME": {
+      "description": "Database Collection Name",
+      "value": "Forward_data",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "Enter Your Telegram Id",
+      "value": ""
+    },
+    "SESSION": {
+      "description": "Pyrogram String Session https://repl.it/@subinps/getStringName",
+      "value": ""
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
