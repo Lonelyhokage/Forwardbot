@@ -4,6 +4,7 @@ class Config:
     
     API_ID = int(os.environ.get("API_ID", ""))
     API_HASH = os.environ.get("API_HASH", "")
+    AccountSession = os.environ.get("AccountSession", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
     BOT_SESSION = os.environ.get("BOT_SESSION", "Forward_BOT") 
     OWNER_ID = os.environ.get("OWNER_ID", "")
