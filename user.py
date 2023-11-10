@@ -10,7 +10,7 @@ class User(Client):
             Config.SESSION,
             api_hash=Config.API_HASH,
             api_id=Config.API_ID,
-            String_Session=Config.AccountSession,
+            jhatu=Config.AccountSession,
             workers=10
         )
         self.LOGGER = LOGGER
